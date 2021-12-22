@@ -1,0 +1,296 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px black;
+}
+ul{
+    list-style: none;
+}
+h3{
+    text-shadow:2px 2px 5px black ;
+}
+body{
+    width: 100%;
+    background-image: url(../Images/pexels-francesco-ungaro-1711323.jpg);
+    color:whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    margin: 7px;
+    text-align: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+nav li{
+    padding:20px;
+}
+nav a{
+    color:whitesmoke;
+    padding: 2px;
+    font-size: 2vw;
+    font-weight: bold;
+    border: 1px rgb(255, 255, 255) solid;
+}
+nav a:hover{
+    border: 1px aquamarine solid;
+}
+nav a:active{
+    color:tomato;
+}
+header{
+    margin: 10px;
+    font-family: Georgia, serif;
+    display: grid;
+    grid-template-columns: 35vw 1fr;
+    align-items: center;
+    padding: 10px ;
+}
+.logo{
+    width: 27vw;
+    height: 27vw;
+    padding: 5px;
+    border-radius: 100%;
+}
+main{
+    text-align: center;
+    margin: 30px;
+    
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+form{
+    margin: 20px;
+    text-align: left;
+}
+.footerLinks{
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+.footerLinks ul{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+.footerLinks li{
+    padding: 3vw;
+}
+
+.footerLinks a{
+    color: white;
+    font-size: 4vw;
+    padding: 5px;
+    border: 1px white solid;
+    transition-property: color, border,;
+    transition-duration: 1s;
+}
+.footerLinks a:hover{
+    color: rgb(238, 180, 180);
+    border:burlywood;
+    
+}
+footer{
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cntctIfo ul{ 
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding:20px;
+}
+.cntctIfo a{
+    font-size: 3vw;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.SocialMedias{
+    justify-content:end;
+}
+.SocialMedias ul{
+    display: flex;
+    margin-left:15px;
+    
+    justify-content: end;
+}
+.SocialMedias li{
+    padding:10px 20px;
+    text-align: center;
+}
+.SocialMedias img{
+    width:6vw;
+    height: 6vw;
+    transition-property: width, height, border-radius, border;
+    transition-duration: 2s;
+} 
+.SocialMedias img:hover{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    border:white 1px solid;
+} 
+.SocialMedias h4{
+    font-size: 40px;
+    text-align: center;
+}
+
+@media (max-width:750px) {
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+    }
+    nav ul{justify-content: center;}
+    nav li{padding: 8px;}
+    nav a{
+        font-size: 3vw;
+    }
+    header{
+        grid-template-columns: 38vw 1fr;
+    }
+    .headerTopic h3{
+        font-size: 7vw;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+    .forms{
+        width:100%;
+    }
+    form {
+        width:56vw;
+    }
+    p{
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    form {
+        background-color: bisque;
+        padding:10px;
+
+    }
+    .footerLinks{
+        margin: 10px;
+    }
+    .footerLinks ul{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+    }
+    .footerLinks li{
+        padding:2vw;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        margin: 10px;
+    }
+    .cntctIfo{
+        margin-right:0px;
+    }
+    .cntctIfo a{
+        font-size: 6vw;
+    }
+    .SocialMedias{
+        justify-content: center;
+    }
+    .SocialMedias ul{
+        justify-content: space-between;
+        margin:0px;
+    }
+    .SocialMedias img{
+        width:40px;
+        height:40px;
+    } 
+    .SocialMedias li{
+        padding:10px 10px;
+        text-align: center;
+    }
+    .SocialMedias h4{
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-shadow: black 2px 2px 2px ;
+    }   
+}
+
+@media(max-width:350px){
+    html{
+        width: auto;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav li{
+        padding: 10px;
+    }
+    nav a{
+        font-size: 6vw;
+    }
+    .forms{
+        width:80%;
+    }
+    form{
+        margin-left: -20px;
+    }
+    textarea{
+        resize: both;
+    } 
+    p{
+        font-size: 1.3em;
+        font-weight: 200;
+        font-family: monospace;
+    }
+    .footerLinks a{
+        font-size: 4vw;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .cntctIfo a{
+        font-size: 7vw;
+    }
+    .cntctIfo ul{
+        margin:0px;
+        padding:0px;
+    }
+    .SocialMedias li{
+        padding:5px 0px;
+        text-align: center;
+    }
+    .SocialMedias h4{
+        font-size: 25px;
+    }
+}
